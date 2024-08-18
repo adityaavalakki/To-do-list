@@ -1,0 +1,23 @@
+/* Aligning the checkbox and task name next to each other with a tab space */
+li {
+    background-color: #f4f4f4;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align items to the left */
+}
+
+li input[type="checkbox"] {
+    margin-right: 20px; /* Add space between checkbox and task text */
+}
+
+li span {
+    flex-grow: 1; /* Make the span take up the remaining space */
+}
+
+li.completed span {
+    text-decoration: line-through;
+    color: #888;
+}
